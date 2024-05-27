@@ -70,6 +70,7 @@ class MainWindow(QMainWindow):
 
     def getMETbySpeed(self, speed):
         # Quadratic function approximated from MET values above
+        speed = 1 / 1.6 * speed
         return 0.032 * speed * speed + 0.02 * speed + 2.6
 
     def createForm(self):
