@@ -21,3 +21,4 @@ pip install PyQtWebEngine
  - [ ] Styling
  - [ ] Validation for negative or impossible values
  - [ ] Auto-update for speed and duration when changing those fields
+ - [ ] Remove default values
