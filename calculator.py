@@ -111,8 +111,6 @@ class MainWindow(QMainWindow):
         speed = ["Speed"]
         calories = ["Calories"]
 
-        print(weight, distance, duration, speed, calories)
-
         f = open("./entries.csv", 'r+', newline='')
         reader = csv.reader(f, delimiter=',', quotechar='|')
         for row in reader:
