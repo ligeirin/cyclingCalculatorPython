@@ -166,6 +166,7 @@ setTimeout(function () {
             {type: 'line', smooth: true, seriesLayoutBy: 'row', emphasis: {focus: 'series'}},
             {type: 'line', smooth: true, seriesLayoutBy: 'row', emphasis: {focus: 'series'}},
             {type: 'line', smooth: true, seriesLayoutBy: 'row', emphasis: {focus: 'series'}},
+            {type: 'line', smooth: true, seriesLayoutBy: 'row', emphasis: {focus: 'series'}},
            
         ]
     };
