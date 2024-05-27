@@ -155,7 +155,10 @@ setTimeout(function () {
         legend: {},
         tooltip: {
             trigger: 'axis',
-            showContent: false
+            showContent: false,
+            axisPointer: {
+                type: 'cross'
+            }
         },
         dataset: {
             source: '''+ '{}'.format(source_data) +'''
