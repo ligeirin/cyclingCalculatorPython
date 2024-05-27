@@ -93,7 +93,7 @@ class MainWindow(QMainWindow):
             self.distanceInput.value(),
             self.durationInput.value(),
             self.speedInput.value(),
-            self.calculateCalories(),
+            round(self.calculateCalories(), 2),
             date.today()
         ])
         f.flush()
@@ -101,7 +101,10 @@ class MainWindow(QMainWindow):
         self.create_line_chart()
 
     def calculateCalories(self):
-        return self.getMETbySpeed(self.speedInput.value()) * self.weightInput.value() * (self.durationInput.value() / 60)
+        MET = self.getMETbySpeed(self.speedInput.value())
+        weight = self.weightInput.value()
+        duration = (self.durationInput.value() / 60)
+        return MET * weight * duration
 
     def create_line_chart(self):
         date = ['Date']
